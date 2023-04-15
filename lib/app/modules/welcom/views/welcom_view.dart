@@ -13,12 +13,10 @@ class WelcomView extends GetView<WelcomController> {
         title: const Text('WelcomView'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text(
-          'WelcomView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+      body: Center(
+          child: Row(
+        children: [],
+      )),
     );
   }
 }
