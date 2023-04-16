@@ -49,7 +49,7 @@ class WelcomView extends GetView<WelcomController> {
             height: 50,
           ),
           RegisterWiget(
-            color: AppColors.blue,
+            color: AppColors.lightBlueAccent,
             text: "Log In",
             onpress: () {},
           ),
@@ -57,7 +57,7 @@ class WelcomView extends GetView<WelcomController> {
             height: 30,
           ),
           RegisterWiget(
-            color: AppColors.green,
+            color: AppColors.blueAccent,
             text: "Sing In",
             onpress: () {},
           ),
