@@ -1,3 +1,4 @@
+import 'package:american_dream_messenger/app/widgets/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -9,16 +10,8 @@ class SingInView extends GetView<SingInController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('SingInView'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'SingInView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
-    );
+        body: Column(
+      children: [AppBarWidget()],
+    ));
   }
 }
