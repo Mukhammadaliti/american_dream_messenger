@@ -1,5 +1,5 @@
-import 'package:american_dream_messenger/app/components/app_colors.dart';
-import 'package:american_dream_messenger/app/components/app_text_styles.dart';
+import 'package:american_dream_messenger/app/constans/app_colors.dart';
+import 'package:american_dream_messenger/app/constans/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
 class RegisterWiget extends StatelessWidget {

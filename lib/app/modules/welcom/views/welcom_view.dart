@@ -1,7 +1,9 @@
 import 'dart:developer';
 
-import 'package:american_dream_messenger/app/components/app_colors.dart';
-import 'package:american_dream_messenger/app/components/app_text_styles.dart';
+import 'package:american_dream_messenger/app/constans/app_colors.dart';
+import 'package:american_dream_messenger/app/constans/app_text_styles.dart';
+import 'package:american_dream_messenger/app/modules/log_in/views/log_in_view.dart';
+import 'package:american_dream_messenger/app/modules/sing_in/views/sing_in_view.dart';
 import 'package:american_dream_messenger/app/modules/welcom/widgets/register_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -51,7 +53,9 @@ class WelcomView extends GetView<WelcomController> {
           RegisterWiget(
             color: AppColors.lightBlueAccent,
             text: "Log In",
-            onpress: () {},
+            onpress: () {
+              Get.to(LogInView());
+            },
           ),
           SizedBox(
             height: 30,
@@ -59,7 +63,9 @@ class WelcomView extends GetView<WelcomController> {
           RegisterWiget(
             color: AppColors.blueAccent,
             text: "Sing In",
-            onpress: () {},
+            onpress: () {
+              Get.to(SingInView());
+            },
           ),
         ],
       )),

@@ -1,4 +1,4 @@
-import 'package:american_dream_messenger/app/components/app_colors.dart';
+import 'package:american_dream_messenger/app/constans/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppTextStyle {
