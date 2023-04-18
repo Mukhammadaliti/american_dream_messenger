@@ -13,10 +13,12 @@ class LogInView extends GetView<LogInController> {
         body: Column(
       children: [
         Container(
-          width: MediaQuery.of(context).size.width * 0.9,
+          width: MediaQuery.of(context).size.width * 1.1,
           height: 200,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(25),
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(25),
+                bottomRight: Radius.circular(25)),
             color: AppColors.blueB8,
           ),
           child: Column(children: [
@@ -26,7 +28,14 @@ class LogInView extends GetView<LogInController> {
                   Icons.arrow_back_rounded,
                   size: 40,
                   color: AppColors.white,
-                ))
+                )),
+            Text(
+              "Login",
+              style: TextStyle(
+                  fontSize: 30,
+                  color: AppColors.white,
+                  fontWeight: FontWeight.w600),
+            ),
           ]),
         )
       ],
