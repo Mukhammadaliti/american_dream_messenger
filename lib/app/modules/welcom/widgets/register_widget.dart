@@ -30,7 +30,7 @@ class RegisterWiget extends StatelessWidget {
           ),
         ], borderRadius: BorderRadius.circular(28), color: color),
         child: Center(
-          child: Text(text, style: AppTextStyle.style),
+          child: Text(text, style: AppTextStyle.white28bold),
         ),
       ),
     );
