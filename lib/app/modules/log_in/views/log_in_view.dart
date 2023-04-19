@@ -1,4 +1,5 @@
 import 'package:american_dream_messenger/app/constans/app_colors.dart';
+import 'package:american_dream_messenger/app/modules/opt/views/opt_view.dart';
 import 'package:american_dream_messenger/app/modules/sing_in/views/sing_in_view.dart';
 import 'package:american_dream_messenger/app/modules/welcom/views/welcom_view.dart';
 import 'package:american_dream_messenger/app/modules/welcom/widgets/register_widget.dart';
@@ -18,9 +19,7 @@ class LogInView extends GetView<LogInController> {
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          AppBarWidget(
-              text: "Login",
-              textt: """Enter your 10 - digit mobile to 
+          AppBarWidget(text: "Login", textt: """Enter your 10 - digit mobile to 
 continue."""),
           SizedBox(
             height: 180,
@@ -54,7 +53,11 @@ continue."""),
             height: 10,
           ),
           RegisterWidget(
-            onpress: () {},
+            onpress: () {
+              Get.to(
+                OptView(),
+              );
+            },
             text: "Login",
           )
         ],
