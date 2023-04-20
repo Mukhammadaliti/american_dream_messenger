@@ -1,4 +1,5 @@
 import 'package:american_dream_messenger/app/constans/app_colors.dart';
+import 'package:american_dream_messenger/app/modules/home/views/home_view.dart';
 import 'package:american_dream_messenger/app/modules/log_in/views/log_in_view.dart';
 import 'package:american_dream_messenger/app/widgets/app_bar_widget.dart';
 import 'package:american_dream_messenger/app/widgets/register_widget.dart';
@@ -8,8 +9,8 @@ import 'package:get/get.dart';
 
 import '../controllers/sing_in_controller.dart';
 
-class SingInView extends GetView<SingInController> {
-  const SingInView({Key? key}) : super(key: key);
+class SingUpView extends GetView<SingInController> {
+  const SingUpView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,7 +90,11 @@ class SingInView extends GetView<SingInController> {
             height: 130,
           ),
           RegisterWidget(
-            onpress: () {},
+            onpress: () {
+              Get.to(
+                HomeView(),
+              );
+            },
             text: "Registe",
           )
         ],

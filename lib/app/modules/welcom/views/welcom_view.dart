@@ -3,7 +3,7 @@ import 'dart:developer';
 import 'package:american_dream_messenger/app/constans/app_colors.dart';
 import 'package:american_dream_messenger/app/constans/app_text_styles.dart';
 import 'package:american_dream_messenger/app/modules/log_in/views/log_in_view.dart';
-import 'package:american_dream_messenger/app/modules/sing_in/views/sing_in_view.dart';
+import 'package:american_dream_messenger/app/modules/sing_up/views/sing_in_view.dart';
 import 'package:american_dream_messenger/app/modules/welcom/widgets/register_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -23,15 +23,15 @@ class WelcomView extends GetView<WelcomController> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                "vectors/output.png",
-                width: 100,
-              ),
+              // Image.asset(
+              //   "images/output.png",
+              //   width: 80,
+              // ),
               DefaultTextStyle(
                 style: AppTextStyle.s20,
                 child: AnimatedTextKit(
                   animatedTexts: [
-                    WavyAnimatedText('American Dream Messenger',
+                    WavyAnimatedText('Dream Messenger',
                         textStyle: AppTextStyle.black30w700),
                   ],
                   pause: Duration(milliseconds: 1),
@@ -58,9 +58,9 @@ class WelcomView extends GetView<WelcomController> {
           ),
           RegisterWiget(
             color: AppColors.blueAccent,
-            text: "Sing In",
+            text: "Sing Up",
             onpress: () {
-              Get.to(SingInView());
+              Get.to(SingUpView());
             },
           ),
         ],

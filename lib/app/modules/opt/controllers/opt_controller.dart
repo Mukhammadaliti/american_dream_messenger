@@ -2,7 +2,6 @@ import 'package:get/get.dart';
 
 class OptController extends GetxController {
   //TODO: Implement OptController
-
   final count = 0.obs;
   @override
   void onInit() {

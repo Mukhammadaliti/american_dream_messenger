@@ -1,3 +1,4 @@
+import 'package:american_dream_messenger/app/modules/welcom/views/welcom_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -9,8 +10,9 @@ void main() {
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Application",
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
+      // initialRoute: AppPages.INITIAL,
+      home: WelcomView(),
+      // getPages: AppPages.routes,
     ),
   );
 }

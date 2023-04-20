@@ -1,6 +1,6 @@
 import 'package:american_dream_messenger/app/constans/app_colors.dart';
 import 'package:american_dream_messenger/app/modules/opt/views/opt_view.dart';
-import 'package:american_dream_messenger/app/modules/sing_in/views/sing_in_view.dart';
+import 'package:american_dream_messenger/app/modules/sing_up/views/sing_in_view.dart';
 import 'package:american_dream_messenger/app/modules/welcom/views/welcom_view.dart';
 import 'package:american_dream_messenger/app/modules/welcom/widgets/register_widget.dart';
 import 'package:american_dream_messenger/app/widgets/app_bar_widget.dart';
@@ -32,8 +32,7 @@ continue."""),
                 filled: true,
                 fillColor: AppColors.transparent,
                 focusColor: AppColors.blueB8,
-                // labelText: "Phone",
-
+                labelText: "Phone",
                 hintText: "Enter your number",
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(100),
@@ -68,7 +67,7 @@ continue."""),
           Text("Dont have an account"),
           TextButton(
               onPressed: () {
-                Get.to(SingInView());
+                Get.to(SingUpView());
               },
               child: Text("Register"))
         ],
