@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "582250606271",
+    "project_id": "dream-chat-21ed2",
+    "storage_bucket": "dream-chat-21ed2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582250606271:android:e3285f7a2dc96eebf7e00a",
+        "android_client_info": {
+          "package_name": "com.american_dream_messenger.american_dream_messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582250606271-p9btvksfgbjco2jqluqkkdhnnrfu3g3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR8el1Q_JXpXOiBCVaVQbEIVze1zXylAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582250606271-p9btvksfgbjco2jqluqkkdhnnrfu3g3v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582250606271-svmkbdpum1v4u0iok8hbtg11rl4ejhgc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.americandreammessenger.americanDreamMessenger"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
