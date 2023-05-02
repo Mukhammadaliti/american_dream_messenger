@@ -6,8 +6,7 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/log_in/bindings/log_in_binding.dart';
 import '../modules/log_in/views/log_in_view.dart';
-import '../modules/opt/bindings/opt_binding.dart';
-import '../modules/opt/views/opt_view.dart';
+
 import '../modules/sing_up/bindings/sing_in_binding.dart';
 import '../modules/sing_up/views/sing_in_view.dart';
 import '../modules/welcom/bindings/welcom_binding.dart';
@@ -45,11 +44,6 @@ class AppPages {
       name: _Paths.SING_IN,
       page: () => const SingUpView(),
       binding: SingInBinding(),
-    ),
-    GetPage(
-      name: _Paths.OPT,
-      page: () => const OptView(),
-      binding: OptBinding(),
     ),
   ];
 }

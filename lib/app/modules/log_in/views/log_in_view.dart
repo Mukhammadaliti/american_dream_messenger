@@ -1,17 +1,12 @@
-import 'package:american_dream_messenger/app/constans/app_colors.dart';
+import 'package:american_dream_messenger/app/modules/home/views/home_view.dart';
 import 'package:american_dream_messenger/app/modules/log_in/controllers/log_in_controller.dart';
-import 'package:american_dream_messenger/app/modules/log_in/widgets/sing_in_text_form_filed.dart';
-import 'package:american_dream_messenger/app/modules/opt/views/opt_view.dart';
+import 'package:american_dream_messenger/app/widgets/sing_in_text_form_filed.dart';
 import 'package:american_dream_messenger/app/modules/sing_up/views/sing_in_view.dart';
-import 'package:american_dream_messenger/app/modules/welcom/views/welcom_view.dart';
-import 'package:american_dream_messenger/app/modules/welcom/widgets/register_widget.dart';
 import 'package:american_dream_messenger/app/widgets/app_bar_widget.dart';
 import 'package:american_dream_messenger/app/widgets/register_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-
-// import '../controllers/log_in_controller.dart';
 
 class LogInView extends GetView<LogInController> {
   const LogInView({Key? key}) : super(key: key);
@@ -20,7 +15,6 @@ class LogInView extends GetView<LogInController> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             AppBarWidget(
                 text: "Login", textt: """Enter your 10 - digit mobile to 
@@ -44,7 +38,7 @@ class LogInView extends GetView<LogInController> {
             RegisterWidget(
               onpress: () {
                 Get.to(
-                  OptView(),
+                  HomeView(),
                 );
               },
               text: "Login",

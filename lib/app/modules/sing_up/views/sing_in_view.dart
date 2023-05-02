@@ -3,6 +3,7 @@ import 'package:american_dream_messenger/app/modules/home/views/home_view.dart';
 import 'package:american_dream_messenger/app/modules/log_in/views/log_in_view.dart';
 import 'package:american_dream_messenger/app/widgets/app_bar_widget.dart';
 import 'package:american_dream_messenger/app/widgets/register_widget.dart';
+import 'package:american_dream_messenger/app/widgets/sing_in_text_form_filed.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -13,105 +14,83 @@ class SingUpView extends GetView<SingInController> {
   const SingUpView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Scaffold(
-      body: Column(
-        children: [
-          AppBarWidget(
-            text: "Register",
-            textt: "Fill up your details to register.",
-          ),
-          SizedBox(
-            height: 80,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
-            child: TextFormField(
-              decoration: InputDecoration(
-                hintText: "Enter your name",
-                label: Text("Name"),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(100),
-                  borderSide: BorderSide(
-                    color: AppColors.blueB8,
-                    width: 1.0,
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            AppBarWidget(
+              text: "Register",
+              textt: "Fill up your details to register.",
+            ),
+            SizedBox(
+              height: height * 0.05,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                children: [
+                  SingInTextFormFiled(
+                    onChange: (p0) {},
+                    world: "Enter your name",
+                    text: "Name",
                   ),
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(100),
-                ),
+                  SizedBox(
+                    height: height * 0.03,
+                  ),
+                  SingInTextFormFiled(
+                    onChange: (p0) {},
+                    world: "Enter your email address",
+                    text: "Email",
+                  ),
+                  SizedBox(
+                    height: height * 0.03,
+                  ),
+                  SingInTextFormFiled(
+                    onChange: (p0) {},
+                    world: "Enter your password",
+                    text: "Password",
+                  ),
+                  SizedBox(
+                    height: 25,
+                  ),
+                  SingInTextFormFiled(
+                    onChange: (p0) {},
+                    world: "Enter your кepeat password",
+                    text: "Repeat password",
+                  ),
+                  SizedBox(
+                    height: height * 0.03,
+                  ),
+                  RegisterWidget(
+                    onpress: () {
+                      Get.to(
+                        HomeView(),
+                      );
+                    },
+                    text: "Register",
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Already have an account"),
+                      TextButton(
+                        onPressed: () {
+                          Get.to(
+                            LogInView(),
+                          );
+                        },
+                        child: Text("Login"),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
-          ),
-          SizedBox(
-            height: 25,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
-            child: TextFormField(
-              decoration: InputDecoration(
-                hintText: "Enter your email",
-                label: Text("Email"),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(100),
-                  borderSide: BorderSide(
-                    color: AppColors.blueB8,
-                    width: 1.0,
-                  ),
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(100),
-                ),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 25,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 20, right: 20),
-            child: TextFormField(
-              decoration: InputDecoration(
-                hintText: "Enter mobile number",
-                label: Text("Mobile"),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(100),
-                  borderSide: BorderSide(
-                    color: AppColors.blueB8,
-                    width: 1.0,
-                  ),
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(100),
-                ),
-              ),
-            ),
-          ),
-          SizedBox(
-            height: 130,
-          ),
-          RegisterWidget(
-            onpress: () {
-              Get.to(
-                HomeView(),
-              );
-            },
-            text: "Registe",
-          )
-        ],
-      ),
-      floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text("Already have an account"),
-          TextButton(
-            onPressed: () {
-              Get.to(
-                LogInView(),
-              );
-            },
-            child: Text("Login"),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
