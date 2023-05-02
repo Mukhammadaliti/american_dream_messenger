@@ -37,12 +37,12 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.LOG_IN,
-      page: () => const LogInView(),
+      page: () => LogInView(),
       binding: LogInBinding(),
     ),
     GetPage(
       name: _Paths.SING_IN,
-      page: () => const SingUpView(),
+      page: () => SingUpView(),
       binding: SingInBinding(),
     ),
   ];

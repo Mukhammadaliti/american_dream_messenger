@@ -66,7 +66,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '582250606271',
     projectId: 'dream-chat-21ed2',
     storageBucket: 'dream-chat-21ed2.appspot.com',
-    iosClientId: '582250606271-svmkbdpum1v4u0iok8hbtg11rl4ejhgc.apps.googleusercontent.com',
+    iosClientId:
+        '582250606271-svmkbdpum1v4u0iok8hbtg11rl4ejhgc.apps.googleusercontent.com',
     iosBundleId: 'com.americandreammessenger.americanDreamMessenger',
   );
 
@@ -76,7 +77,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '582250606271',
     projectId: 'dream-chat-21ed2',
     storageBucket: 'dream-chat-21ed2.appspot.com',
-    iosClientId: '582250606271-svmkbdpum1v4u0iok8hbtg11rl4ejhgc.apps.googleusercontent.com',
+    iosClientId:
+        '582250606271-svmkbdpum1v4u0iok8hbtg11rl4ejhgc.apps.googleusercontent.com',
     iosBundleId: 'com.americandreammessenger.americanDreamMessenger',
   );
 }
