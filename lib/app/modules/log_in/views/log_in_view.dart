@@ -24,7 +24,8 @@ class LogInView extends GetView<LogInController> {
             // mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               AppBarWidget(
-                text: "Sign In",
+                text: "Log In",
+                textt: "Please Log in",
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.2,

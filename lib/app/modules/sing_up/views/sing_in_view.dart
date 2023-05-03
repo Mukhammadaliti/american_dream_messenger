@@ -1,12 +1,11 @@
-// import 'package:american_dream_messenger/app/constans/app_colors.dart';
-// import 'package:american_dream_messenger/app/modules/home/views/home_view.dart';
-// import 'package:american_dream_messenger/app/modules/log_in/views/log_in_view.dart';
+import 'dart:developer';
+
 import 'package:american_dream_messenger/app/constans/app_text_styles.dart';
 import 'package:american_dream_messenger/app/modules/log_in/views/log_in_view.dart';
 import 'package:american_dream_messenger/app/modules/sing_up/widgets/input_decoration.dart';
 import 'package:american_dream_messenger/app/widgets/app_bar_widget.dart';
 import 'package:american_dream_messenger/app/widgets/register_widget.dart';
-// import 'package:american_dream_messenger/app/widgets/sing_in_text_form_filed.dart';
+
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -28,6 +27,7 @@ class SingUpView extends GetView<SingInController> {
             children: [
               AppBarWidget(
                 text: "Sign Up",
+                textt: 'Please register in here',
               ),
               SizedBox(
                 height: height * 0.1,
@@ -51,6 +51,7 @@ class SingUpView extends GetView<SingInController> {
                 child: TextFormField(
                     onChanged: (value) {
                       _signInController.email.value = value;
+                      log('${_signInController.email.value}');
                     },
                     decoration: inputDecoration.copyWith(
                       label: Text("Email"),
@@ -64,6 +65,7 @@ class SingUpView extends GetView<SingInController> {
                 child: TextFormField(
                     onChanged: (value) {
                       _signInController.password.value = value;
+                      log(" ${_signInController.password.value = value}");
                     },
                     decoration: inputDecoration.copyWith(
                       label: Text("Password"),
