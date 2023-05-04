@@ -1,4 +1,5 @@
 import 'package:american_dream_messenger/app/modules/welcom/views/welcom_view.dart';
+import 'package:american_dream_messenger/app/routes/app_pages.dart';
 import 'package:american_dream_messenger/firebase_options.dart';
 import 'package:flutter/material.dart';
 
@@ -15,9 +16,9 @@ void main() async {
     GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Application",
-      // initialRoute: AppPages.INITIAL,
-      home: WelcomView(),
-      // getPages: AppPages.routes,
+      initialRoute: AppPages.INITIAL,
+      // home: (),
+      getPages: AppPages.routes,
     ),
   );
 }
