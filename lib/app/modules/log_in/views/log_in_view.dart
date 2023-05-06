@@ -1,8 +1,8 @@
 import 'package:american_dream_messenger/app/constans/app_colors.dart';
 import 'package:american_dream_messenger/app/constans/app_text_styles.dart';
-import 'package:american_dream_messenger/app/modules/home/views/home_view.dart';
+// import 'package:american_dream_messenger/app/modules/home/views/home_view.dart';
 import 'package:american_dream_messenger/app/modules/log_in/controllers/log_in_controller.dart';
-import 'package:american_dream_messenger/app/widgets/sing_in_text_form_filed.dart';
+// import 'package:american_dream_messenger/app/widgets/sing_in_text_form_filed.dart';
 import 'package:american_dream_messenger/app/modules/sing_up/views/sing_in_view.dart';
 import 'package:american_dream_messenger/app/widgets/app_bar_widget.dart';
 import 'package:american_dream_messenger/app/widgets/register_widget.dart';
